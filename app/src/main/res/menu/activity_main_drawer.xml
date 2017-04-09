@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu_1"
+            android:icon="@android:drawable/ic_menu_directions"
+            android:title="내 이동경로 분석" />
+        <item
+            android:id="@+id/nav_menu_2"
+            android:icon="@android:drawable/ic_dialog_map"
+            android:title="먼지지도" />
+        <item
+            android:id="@+id/nav_menu_3"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="나중추가1" />
+        <item
+            android:id="@+id/nav_menu_4"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="나중추가2" />
+        <item
+            android:id="@+id/nav_menu_5"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="예보 이미지" />
+    </group>
+
+    <item android:title="기타">
+        <menu>
+            <item
+                android:id="@+id/nav_submenu_1"
+                android:icon="@android:drawable/ic_menu_add"
+                android:title="내 기기 등록" />
+            <item
+                android:id="@+id/nav_submenu_2"
+                android:icon="@android:drawable/ic_menu_manage"
+                android:title="설정" />
+            <item
+                android:id="@+id/nav_submenu_3"
+                android:icon="@android:drawable/ic_delete"
+                android:title="로그아웃" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/reg_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="E-mail"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp" />
+
+    <TextView
+        android:id="@+id/reg_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/reg_email"
+        android:layout_alignStart="@+id/reg_email"
+        android:layout_below="@+id/reg_email"
+        android:layout_marginTop="30dp"
+        android:text="P/W"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/reg_pw_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/reg_pw"
+        android:layout_alignStart="@+id/reg_pw"
+        android:layout_below="@+id/reg_pw"
+        android:layout_marginTop="35dp"
+        android:text="P/W(확인)"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/reg_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/reg_tel"
+        android:layout_alignLeft="@+id/reg_pw_2"
+        android:layout_alignStart="@+id/reg_pw_2"
+        android:layout_marginBottom="32dp"
+        android:text="name"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/reg_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/reg_name"
+        android:layout_alignStart="@+id/reg_name"
+        android:layout_centerVertical="true"
+        android:text="Tell"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/reg_sick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:text="천식여부"
+        android:textSize="18sp"
+        android:layout_below="@+id/reg_tel"
+        android:layout_alignLeft="@+id/reg_tel"
+        android:layout_alignStart="@+id/reg_tel" />
+
+    <Button
+        android:id="@+id/reg_conform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="64dp"
+        android:onClick="registerfinishonClick"
+        android:text="등록" />
+
+    <EditText
+        android:id="@+id/reg_email_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/reg_email"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_toRightOf="@+id/reg_pw_2"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/reg_pw_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/reg_pw"
+        android:layout_alignLeft="@+id/reg_email_val"
+        android:layout_alignStart="@+id/reg_email_val"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/reg_pw_2_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/reg_pw_2"
+        android:layout_alignLeft="@+id/reg_pw_val"
+        android:layout_alignStart="@+id/reg_pw_val"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/reg_name_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/reg_name"
+        android:layout_alignLeft="@+id/reg_pw_2_val"
+        android:layout_alignStart="@+id/reg_pw_2_val"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/reg_tel_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/reg_tel"
+        android:layout_alignLeft="@+id/reg_name_val"
+        android:layout_alignStart="@+id/reg_name_val"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/reg_tel_val"
+        android:layout_alignStart="@+id/reg_tel_val"
+        android:layout_alignTop="@+id/reg_sick">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="No" />
+    </RadioGroup>
+
+</RelativeLayout>
