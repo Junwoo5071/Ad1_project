@@ -151,6 +151,9 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_menu_5) {
 
+            Intent dustImage = new Intent(this, DustImageActivity.class);
+            startActivity(dustImage);
+
         } else if (id == R.id.nav_submenu_1) {
 
         } else if (id == R.id.nav_submenu_2) {
